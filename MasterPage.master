@@ -1,0 +1,32 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajax" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%;">
+<head runat="server">
+    <title>OJT 2.0</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="width:100%; height:100%; background-color: #90EE90;">
+    <form id="form_ROOT" runat="server" style="width:100%; height:100%;">
+    <div style="width:100%; height:100%;">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <table style= "width:100%; height:100%;" border="0" cellspacing="0" cellpadding="5">
+            <tr style="width:100%; height:100%;">
+                <td style="width:15%; height:100%; background-color: #006400;" valign="top">
+                    <asp:ContentPlaceHolder id="Content_LEFT" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="width:85%; height:100%; background-color: #90EE90;" valign="top">
+                    <asp:ContentPlaceHolder id="Content_RIGHT" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

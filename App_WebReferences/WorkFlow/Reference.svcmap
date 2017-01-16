@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="15ac8771-0d52-4066-b1ad-ec876807c0f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://bpm65.haartzcorp.haartz.com/IAF/EventEngine/EventEngine/EventEngineService.asmx" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EventEngineService.wsdl" MetadataType="Wsdl" ID="b045ffb5-7e59-462e-938e-57a8fec5d886" SourceId="1" SourceUrl="http://bpm65.haartzcorp.haartz.com/IAF/EventEngine/EventEngine/EventEngineService.asmx?wsdl" />
+    <MetadataFile FileName="EventEngineService.disco" MetadataType="Disco" ID="2a32c7b1-9c00-465e-ac0e-b678f0b84c91" SourceId="1" SourceUrl="http://bpm65.haartzcorp.haartz.com/IAF/EventEngine/EventEngine/EventEngineService.asmx?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

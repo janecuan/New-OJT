@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="OJT" Class="OJT_DB_ClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=SQLDB1;Initial Catalog=OJT;Persist Security Info=True;User ID=ojt2012" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="OJTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblADMINISTRATORS" Member="tblADMINISTRATORs">
+    <Type Name="tblADMINISTRATOR">
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FIRST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LAST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEMPLOYEE_QUALIFICATIONS" Member="tblEMPLOYEE_QUALIFICATIONs">
+    <Type Name="tblEMPLOYEE_QUALIFICATION">
+      <Column Name="EMPLOYEE_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MASTER_JOB_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_TITLE_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MACHINE_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TRAINING_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DATE_APPROVED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVED_BY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SUPERVISOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SUPERVISOR_APPROVED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEMPLOYEES_QUALIFIED" Member="tblEMPLOYEES_QUALIFIEDs">
+    <Type Name="tblEMPLOYEES_QUALIFIED">
+      <Column Name="EMPLOYEE_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MASTER_JOB_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MACHINE_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_TITLE_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="APPROVED_BY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATE_APPROVED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SUPERVISOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SUPERVISOR_APPROVED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FORM_CHANGE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblJOB_MACHINE_MASTER" Member="tblJOB_MACHINE_MASTERs">
+    <Type Name="tblJOB_MACHINE_MASTER">
+      <Column Name="MASTER_JOB_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_TITLE_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MACHINE_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TRAINING_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblJOB_TITLE_APPROVALS" Member="tblJOB_TITLE_APPROVALs">
+    <Type Name="tblJOB_TITLE_APPROVAL">
+      <Column Name="MASTER_JOB_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MACHINE_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_TITLE_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QCF_NUMBER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REVIEWED_BY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_REVIEWED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblJOB_TITLE_MASTER" Member="tblJOB_TITLE_MASTERs">
+    <Type Name="tblJOB_TITLE_MASTER">
+      <Column Name="MASTER_JOB_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_TITLE_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QCF_NUMBER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REVIEWED_BY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_REVIEWED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblJOB_TITLES" Member="tblJOB_TITLEs">
+    <Type Name="tblJOB_TITLE">
+      <Column Name="JOB_TITLE_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_TITLE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="JOB_TITLE_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QSF_NUMBER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REVISED_BY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REVISION_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMACHINES" Member="tblMACHINEs">
+    <Type Name="tblMACHINE">
+      <Column Name="MACHINE_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMASTER_JOB_TITLES" Member="tblMASTER_JOB_TITLEs">
+    <Type Name="tblMASTER_JOB_TITLE">
+      <Column Name="MASTER_JOB_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MASTER_JOB_TITLE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DOCUMENT" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblOJT_CONTROLS" Member="tblOJT_CONTROLs">
+    <Type Name="tblOJT_CONTROL">
+      <Column Name="RECORD_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LAST_EMPLOYEE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LAST_CATEGORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LAST_JOB_TITLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LAST_TRAINING_NUMBER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTRAINING_CODES" Member="tblTRAINING_CODEs">
+    <Type Name="tblTRAINING_CODE">
+      <Column Name="TRAINING_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TITLE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="MACHINE_DEPENDENT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTRAINER_QUALIFICATIONS" Member="tblTRAINER_QUALIFICATIONs">
+    <Type Name="tblTRAINER_QUALIFICATION">
+      <Column Name="EMPLOYEE_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MASTER_JOB_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_TITLE_NUMBER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MACHINE_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEMPLOYEES" Member="tblEMPLOYEEs">
+    <Type Name="tblEMPLOYEE">
+      <Column Name="EMPLOYEE_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FIRST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LAST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMPLOYEE_NUMBER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DEFAULT_JOB_TITLE_NUMBER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DEFAULT_MACHINE_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRAINER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ACTIVE_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMMENTS" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IS_SUPERVISOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUPERVISOR_PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUPERVISOR_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

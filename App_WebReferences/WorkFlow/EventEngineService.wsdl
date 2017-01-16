@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://CdcSoftware.com/Events/2006/03" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://CdcSoftware.com/Events/2006/03" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://CdcSoftware.com/Events/2006/03">
+      <s:element name="RaiseEvent20">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eventName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="context" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p6" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p7" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p8" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p9" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p10" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p11" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p12" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p13" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p14" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p15" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p16" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p17" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p18" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p19" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p20" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RaiseEvent20Response">
+        <s:complexType />
+      </s:element>
+      <s:element name="RaiseEventExternal2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eventName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="environment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="eventParms" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RaiseEventExternal2Response">
+        <s:complexType />
+      </s:element>
+      <s:element name="RaiseEvent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eventName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="context" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="eventParms" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RaiseEventResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RaiseEvent20SoapIn">
+    <wsdl:part name="parameters" element="tns:RaiseEvent20" />
+  </wsdl:message>
+  <wsdl:message name="RaiseEvent20SoapOut">
+    <wsdl:part name="parameters" element="tns:RaiseEvent20Response" />
+  </wsdl:message>
+  <wsdl:message name="RaiseEventExternal2SoapIn">
+    <wsdl:part name="parameters" element="tns:RaiseEventExternal2" />
+  </wsdl:message>
+  <wsdl:message name="RaiseEventExternal2SoapOut">
+    <wsdl:part name="parameters" element="tns:RaiseEventExternal2Response" />
+  </wsdl:message>
+  <wsdl:message name="RaiseEventSoapIn">
+    <wsdl:part name="parameters" element="tns:RaiseEvent" />
+  </wsdl:message>
+  <wsdl:message name="RaiseEventSoapOut">
+    <wsdl:part name="parameters" element="tns:RaiseEventResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EventEngineWebServiceSoap">
+    <wsdl:operation name="RaiseEvent20">
+      <wsdl:input message="tns:RaiseEvent20SoapIn" />
+      <wsdl:output message="tns:RaiseEvent20SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RaiseEventExternal2">
+      <wsdl:input message="tns:RaiseEventExternal2SoapIn" />
+      <wsdl:output message="tns:RaiseEventExternal2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RaiseEvent">
+      <wsdl:input message="tns:RaiseEventSoapIn" />
+      <wsdl:output message="tns:RaiseEventSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EventEngineWebServiceSoap" type="tns:EventEngineWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RaiseEvent20">
+      <soap:operation soapAction="http://CdcSoftware.com/Events/2006/03/RaiseEvent20" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RaiseEventExternal2">
+      <soap:operation soapAction="http://CdcSoftware.com/Events/2006/03/RaiseEventExternal2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RaiseEvent">
+      <soap:operation soapAction="http://CdcSoftware.com/Events/2006/03/RaiseEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EventEngineWebServiceSoap12" type="tns:EventEngineWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RaiseEvent20">
+      <soap12:operation soapAction="http://CdcSoftware.com/Events/2006/03/RaiseEvent20" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RaiseEventExternal2">
+      <soap12:operation soapAction="http://CdcSoftware.com/Events/2006/03/RaiseEventExternal2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RaiseEvent">
+      <soap12:operation soapAction="http://CdcSoftware.com/Events/2006/03/RaiseEvent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EventEngineWebService">
+    <wsdl:port name="EventEngineWebServiceSoap" binding="tns:EventEngineWebServiceSoap">
+      <soap:address location="http://bpm65.haartzcorp.haartz.com/IAF/EventEngine/EventEngine/EventEngineService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EventEngineWebServiceSoap12" binding="tns:EventEngineWebServiceSoap12">
+      <soap12:address location="http://bpm65.haartzcorp.haartz.com/IAF/EventEngine/EventEngine/EventEngineService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

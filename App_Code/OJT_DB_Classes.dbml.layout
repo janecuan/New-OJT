@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.5" name="OJT_DB_Classes">
+  <DataContextMoniker Name="/OJT_DB_ClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e0cdafe5-20b6-48c1-8540-c16e7fb036c4" absoluteBounds="0.5, 0.5, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblADMINISTRATOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3180857f-a428-4fbc-ae8e-8138ffa82e2e" absoluteBounds="0.515, 0.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e9feb285-e83b-4c42-aa3f-e8ca3e4e244b" absoluteBounds="0.5, 2, 2, 2.24658447265625">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblEMPLOYEE_QUALIFICATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c833d255-1c8f-4bd2-a04c-044cb7010900" absoluteBounds="0.515, 2.46, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40863643-d813-4a21-a3a0-bd6413dc705e" absoluteBounds="2.625, 2, 2, 2.24658447265625">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblEMPLOYEES_QUALIFIED" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2c381af-f152-41d3-8025-e30c76f6c78e" absoluteBounds="2.64, 2.46, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92f6ce82-241e-4e55-a348-b5770d80793e" absoluteBounds="4.75, 2, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblJOB_MACHINE_MASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c9bd91f-c15f-4904-9aa6-5a1e74fc12cb" absoluteBounds="4.765, 2.46, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4778aff0-3762-47da-aa8e-3ec17f150481" absoluteBounds="4.75, 4.375, 2, 1.75354248046875">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblJOB_TITLE_APPROVAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2815ff46-ea97-43df-ba99-c9afae535d0c" absoluteBounds="4.765, 4.835, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb61426c-1b1f-4f7b-8333-385b95381aaa" absoluteBounds="6.875, 2, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblJOB_TITLE_MASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b7ac2af-3137-4f50-91a1-44b2a320cf33" absoluteBounds="6.89, 2.46, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="acd41676-06c7-45d9-83ea-7b4adac34eaa" absoluteBounds="6.875, 4.375, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblJOB_TITLE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5da5bccd-e9bf-4065-8a1a-c259300c4291" absoluteBounds="6.89, 4.835, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6fb3f2c-05f9-47e2-8a67-b4d690a6193e" absoluteBounds="2.625, 0.5, 2, 1.0961531575520833">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblMACHINE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="553bbf54-259b-47fb-9377-1a1c24edac9a" absoluteBounds="2.64, 0.96, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d67fb799-eb3b-4127-84dd-a50d949430df" absoluteBounds="4.75, 0.5, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblMASTER_JOB_TITLE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a983caf-5c32-4165-9472-b017bffbaf85" absoluteBounds="4.765, 0.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b1addd6-67f0-4d60-b70e-469253538bfe" absoluteBounds="0.5, 4.375, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblOJT_CONTROL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c17a0702-bdec-42a9-b229-ebe5ad8ce563" absoluteBounds="0.51499999999999968, 4.835, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88c6b98e-a081-4a52-bea0-e9541ad57979" absoluteBounds="6.875, 0.5, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblTRAINING_CODE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a94bfbcb-2221-4dab-850f-561e3ccca89e" absoluteBounds="6.89, 0.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d55c49d1-cd8c-460e-8031-488a6a2c3232" absoluteBounds="2.625, 4.375, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblTRAINER_QUALIFICATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c6209e4-cb1a-4688-b7b9-5ae0d55412f0" absoluteBounds="2.64, 4.835, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67da8afb-7419-4649-911f-fb3811c39a9d" absoluteBounds="0.5, 6.125, 2, 3.0683211263020831">
+      <DataClassMoniker Name="/OJT_DB_ClassesDataContext/tblEMPLOYEE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20ac83ba-5929-4dec-a7d0-17cc5cf10c0e" absoluteBounds="0.51500000000000012, 6.585, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
