@@ -1,5 +1,5 @@
 # OJT (Operation Job Traning)
-This operation job training mangement system is developed for recording and maintaining employee trainings.
+This operation job training mangement system is developed using VB and ASP.NET, for recording and maintaining employee trainings.
 
 It contains sections showed as below:
 
