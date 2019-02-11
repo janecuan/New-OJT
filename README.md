@@ -3,27 +3,27 @@ This operation job training mangement system is developed for recording and main
 
 It contains sections showed as below:
 
-** 1. Employee Training Entry **
+ 1. Employee Training Entry 
 
-** 2. On-going Traning Maintenance **
-        1). Training Codes
-        2). Job Titles
-        3). Machine Codes
-        4). Categarys
-        5). Employees
-        6). Adminstrators
+ 2. On-going Traning Maintenance 
+        - 1). Training Codes
+        - 2). Job Titles
+        - 3). Machine Codes
+        - 4). Categarys
+        - 5). Employees
+         -6). Adminstrators
         
-** 3. Configuration **
-        1). Approvals
-        2). Trainers
-        3). Positions
+ 3. Configuration 
+        - 1). Approvals
+        - 2). Trainers
+        - 3). Positions
         
-** 4. Reports and Downloads **
-        1). Incomplete Training
-        2). Training Completed
+ 4. Reports and Downloads 
+        - 1). Incomplete Training
+        - 2). Training Completed
                 a. By Job
                 b. By Employee
-        3). Trainer Report
+        - 3). Trainer Report
         
         
 This system serves over 200 users and has been running for over a year.
